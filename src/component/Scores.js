@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
+import { useContext } from "react";
+import { AppContext } from "./context";
+
 import Score from './TeamScore';
 import './Scores.css'
 
@@ -17,7 +20,7 @@ import './Scores.css'
 // 	.catch(err => console.error(err));
 
 // livescoreapikey : 47ebd85ab310e584a034268128bd60da1f8a18362f61cc6c56903e7b2dc3bef9
-const TourUrl='https://livescore6.p.rapidapi.com/matches/v2/list-live?Category=soccer&Timezone=-7'
+
 
 
 const Scores = () => {
@@ -29,30 +32,12 @@ const Scores = () => {
 // 		'X-RapidAPI-Host': 'livescore6.p.rapidapi.com'
 // 	}
 // };
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'fa0e811111msh01e55b0923ed77bp167981jsn24b72d957ee9',
-		'X-RapidAPI-Host': 'livescore6.p.rapidapi.com'
-	}
-};
 
-
-    const [tour, setTour]=useState([])
-    const getTour=async()=>{
-        const response=await fetch(TourUrl,options)
-        const tour= await response.json()
-        setTour(tour.Stages)
-        console.log(tour.Stages)
-    }
-    useEffect(()=>{
-        getTour()
-         // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[])
-    
+  const data5 = useContext(AppContext);
+  console.log(data5)
   return (
     <section className="container">
-        {tour.map((games)=>{
+        {data5.map((games)=>{
           return(
             <div key={games.Sid}>
               <h2>{games.Ccd}</h2>

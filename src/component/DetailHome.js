@@ -3,23 +3,20 @@ import { useContext } from 'react';
 import { AppContext } from './context';
 
 const DetailHome = ({teamId}) => {
-  let gamesaarry=[]
-  let teamdata=[]
   const data=useContext(AppContext)
   console.log(data)
-  data.map((ggg)=>{
-    ggg.T1.map((team)=>{
-      teamdata=[team.Img]
-      return(
-        teamdata
-      )
-    })
-    gamesaarry = [ggg.Eid, ggg.Tr1, ggg.Tr2];
+
+  let teamObjectdata={}
+  data.map((hhh)=>{
+    const country=hhh.Sid
+    const statee = hhh.Ccd
+    const league = hhh.Scd
+    teamObjectdata={country,statee,league}
     return(
-        gamesaarry
+      teamObjectdata
     )
   })
-  
+  console.log(teamObjectdata)
   return (
     <div>
       <h1>{teamId}</h1>

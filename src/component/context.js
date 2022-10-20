@@ -22,22 +22,14 @@ const AppProvider=({children})=>{
       const response = await fetch(TourUrl, options);
       const tour = await response.json();
       setTour(tour.Stages);
-      console.log(tour.Stages);
+      // console.log(tour.Stages);
     };
     useEffect(() => {
       getTour();
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-    let theoutervalue=[]
-        tour.map((games)=>{
-            theoutervalue = games.Events;
-            return(
-                games.Events
-            )
-        })
-
         return (
-          <AppContext.Provider value={theoutervalue}>
+          <AppContext.Provider value={tour}>
             {children}
           </AppContext.Provider>
         );
