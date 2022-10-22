@@ -2,7 +2,7 @@
 import { useContext } from "react";
 import { AppContext } from "./context";
 
-import Score from './TeamScore';
+import TeamScore from './TeamScore';
 import './Scores.css'
 
 
@@ -45,7 +45,7 @@ const Scores = () => {
               {games.Events.map((gameEvent)=>{
                 return(
                   <div key={gameEvent.Eid}>
-                    <Score pgameEvent={gameEvent} />
+                    <TeamScore pgameEvent={gameEvent} />
                   </div>        
                 )
               })}
