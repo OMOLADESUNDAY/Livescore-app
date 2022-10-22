@@ -12,7 +12,7 @@ html{
 :root{
   --color-primary:#87DCF0;
   --color-secondary:rgb#D47863;
-  --color-bg:#034752;
+  --color-bg:#02191d94;
   --text-color:#6D7779;
   --container-width-lg:80%;
   --container-width-md: 85%;
@@ -22,6 +22,7 @@ html{
   --padding-md: 1rem;
   --padding-lg: 1.5rem;
 }
+
 .btn{
   background:var(--color-primary);
   padding: var(--padding-md) var(--padding-lg);
@@ -39,7 +40,7 @@ img{
   object-fit: cover;
 }
 .container{
-  width: var(--container-width-lg);
+  width: var(--container-width-sm);
   margin: 0 auto;
 }
 @media screen and (max-width:1024px) {

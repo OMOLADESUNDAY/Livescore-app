@@ -1,4 +1,31 @@
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
 .link__container{
     color: black;
     text-decoration: none;
+}
+.star__container{
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+.star{
+    cursor: pointer;
+    color: black;
+    width: 20px;
+    height: 20px;
+    
+}
+.star__color__remove{
+    cursor: pointer;
+    color: red;
+    width: 20px;
+    height: 20px;
 }

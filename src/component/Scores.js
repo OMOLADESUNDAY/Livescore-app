@@ -40,8 +40,8 @@ const Scores = () => {
         {data5.map((games)=>{
           return(
             <div key={games.Sid}>
-              <h2>{games.Ccd}</h2>
-              <h2>{games.Scd}</h2>
+              <h4>{games.Ccd}</h4>
+              <h5>{games.Scd}</h5>
               {games.Events.map((gameEvent)=>{
                 return(
                   <div key={gameEvent.Eid}>

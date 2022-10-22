@@ -2,11 +2,12 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    
 }
 .team__container{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     width: 60%;
     cursor: pointer;
@@ -15,17 +16,20 @@
     display: flex;
     align-items: center;
     width: 50%;
+    gap: 0.3rem;
     justify-content: flex-end;
 }
 .team2{
     display: flex;
     align-items: center;
     width: 50%;
+    gap: 0.3rem;
     justify-content: flex-start;
 }
 .time{
     width: 15%;
 }
 .star{
-    width: 15%;
+    width: fit-content;
+    
 }
