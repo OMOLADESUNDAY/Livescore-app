@@ -6,7 +6,7 @@ const Header = () => {
         <nav>
             <img src={logo} alt="logo" className='logo' />
         </nav>
-        <h1>
+        <h1 className='brandname'>
             Spyscore 
         </h1>
         <div>
