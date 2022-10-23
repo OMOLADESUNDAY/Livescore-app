@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Scores from './component/Scores'
 import Header from './component/Header';
 
+
 function App() {
   return (
     <div>

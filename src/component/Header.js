@@ -1,10 +1,10 @@
 import React from 'react'
-
+import logo from '../image/Screenshot-removebg-preview.png';
 const Header = () => {
   return (
     <header className='container header__container'>
         <nav>
-            <div>logo</div>
+            <img src={logo} alt="logo" className='logo' />
         </nav>
         <h1>
             Spyscore 
