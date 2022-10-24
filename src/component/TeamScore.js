@@ -22,6 +22,7 @@ const TeamScore = ({pgameEvent}) => {
           to="/DetailHome"
           state={{
             id: pgameEvent.Eid,
+            stg:pgameEvent.Stg,
             Eps: pgameEvent.Eps,
             Tr1: pgameEvent.Tr1,
             Tr2: pgameEvent.Tr2,
@@ -58,7 +59,7 @@ const TeamScore = ({pgameEvent}) => {
           />
         </div>
       </div>
-      <hr />
+      <hr className='horizontal__line'/>
     </div>
   );
 }

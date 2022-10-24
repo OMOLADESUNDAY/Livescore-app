@@ -1,4 +1,5 @@
 import React from 'react'
+import {ImCheckmark} from 'react-icons/im'
 import logo from '../image/Screenshot-removebg-preview.png';
 const Header = () => {
   return (
@@ -9,8 +10,8 @@ const Header = () => {
         <h1 className='brandname'>
             Spyscore 
         </h1>
-        <div>
-            verified
+        <div className='verified'>
+            <ImCheckmark/>
         </div>
     </header>
   )

@@ -1,0 +1,15 @@
+.detail__home__container{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.teams{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.middle__elements{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}

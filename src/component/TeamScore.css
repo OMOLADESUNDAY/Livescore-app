@@ -8,7 +8,7 @@
 
 }
 .link__container{
-    color: black;
+    color: var(--color-primary);
     text-decoration: none;
     text-shadow: 2px 3px 4px  gray;
 }
@@ -26,16 +26,25 @@
 }
 .star__color__remove{
     cursor: pointer;
-    color: red;
+    color:var(--color-primary);
     width: 20px;
     height: 20px;
 }
 .logo{
     width: 50px;
     height: 50px;
-    box-shadow: 2px 3px 4px 4px gray;
+    box-shadow: 2px 3px 4px 4px var(--color-primary);
     border-radius: 1rem;
 }
 .brandname{
-    text-shadow: 6px 6px 6px  gray;
+    color: pink;
+    text-shadow: 6px 6px 6px  var(--color-primary);
+}
+.verified{
+    color: pink;
+}
+.horizontal__line{
+    
+    border: 1px solid var(--color-primary);
+   
 }

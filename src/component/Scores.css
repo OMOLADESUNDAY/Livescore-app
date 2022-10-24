@@ -27,7 +27,11 @@
     justify-content: flex-start;
 }
 .time{
+    color: var(--color-primary);
     width: 15%;
+}
+.country{
+    color: var(--color-primary);
 }
 .star{
     width: fit-content;
